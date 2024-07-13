@@ -6,7 +6,7 @@
 ### Project Structure
 * conn -> connection string to mysql
 * login -> login page, login checking and authentication logic, logout
-* page-assets - holds file used to init page, html ,head, body creation, js scripts, plugins links
+* page-assets -> holds file used to init page, html ,head, body creation, js scripts, plugins links
 * src -> the web root, holds all php pages
   * public -> public images, favicon
   * plugins - external files or libraries used
