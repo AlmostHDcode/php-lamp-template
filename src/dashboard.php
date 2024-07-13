@@ -2,9 +2,9 @@
 $page_admin = false;
 $browser_title = "PHP Fullstack | Dashboard";
 $page_header = 'Dashboard';
-$custom_srcs = [];
 $custom_styles = [];
-require_once("/path/to/your/base/directory");
+$custom_srcs = [];
+require_once("/path/to/your/base/directory/env.php");
 require_once(PAGE_INIT);
 ?>
 
