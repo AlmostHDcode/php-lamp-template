@@ -4,7 +4,7 @@ $browser_title = "PHP Fullstack | Dashboard"; //used in <title></title>
 $page_header = 'Dashboard'; //used as the 
 $custom_styles = []; //add path to custom extra css needed for this page to this array
 $custom_srcs = []; //add path to custom extra js needed in the <head> for this page to this array
-require_once("/path/to/your/base/directory"); //the file that defines all constants and has env vars for mysql
+require_once("/path/to/your/base/directory/env.php"); //the file that defines all constants and has env vars for mysql
 require_once(PAGE_INIT); //start output buffer, create the head and body and beginning divs to hold page data
 ?>
 
