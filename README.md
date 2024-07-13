@@ -1,6 +1,7 @@
 ## PHP Full Stack LAMP Template Project
 
 * Simple Template to help you get started with a fullstack php application
+* Created using PHP, Mysql, JQuery, Bootstrap
 
 ### Project Structure
 * conn -> connection string to mysql
@@ -14,24 +15,25 @@
 * template.php -> sample template file that shows how to setup each page
 * db-sql-example.sql -> sample sql to help setup user table, login logs table, active logins table
 
-### How to SETUP
+### How to Setup
 * requires a mysql database
 * edit the env.php file
-  * change the SITE_NAME, BASE_DIR
-  * change the putenv variables for the mysql config host, user, pass, db
-* edit the require_once() line at the beginning of each new page to link to your env.php file
+  * Update the SITE_NAME, BASE_DIR
+  * Update the putenv lines that hold mysql db info for hostname, username, password, db name
+* Update the require_once() line at the beginning of each new page to link to your env.php file
+* Update Time Zone in conn.php page
 
 ### Features
-* Created using PHP, Mysql, JQuery, Bootstrap
 * Login Authentication system
 * Pages can be set to be open to all users, or admin only
 * Sweetalert2 used to create alerts and modals
 * Pace Loading bar
 * Loading Screen when ajax call is made
+* Sidebar with animated folding and opening submenus
 * User can dynamically add additional js scripts or styles to any page
 * Automatic Logout after being idle for a cetain amount of time
 * Secure session management and regeneration
-* Keep track of active login session, and save records of past logins
+* Keep track of active login sessions, and save records of past logins
 
 ### Screenshots
 
