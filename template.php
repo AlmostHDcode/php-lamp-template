@@ -1,7 +1,7 @@
 <?php
 $page_admin = false; //used to check if this page is open to all who are logged in, or admin only
 $browser_title = "PHP Fullstack | Dashboard"; //used in <title></title>
-$page_header = 'Dashboard'; //used as the 
+$page_header = 'Dashboard'; //used in header at the top of page
 $custom_styles = []; //add path to custom extra css needed for this page to this array
 $custom_srcs = []; //add path to custom extra js needed in the <head> for this page to this array
 require_once("/path/to/your/base/directory/env.php"); //the file that defines all constants and has env vars for mysql
