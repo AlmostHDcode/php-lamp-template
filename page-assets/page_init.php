@@ -1,9 +1,9 @@
 <?php
 ob_start();
-require_once(PHP_SESSION_MANAGE);
+require_once PHP_SESSION_MANAGE;
 custom_session_start();
-require_once(CONN);
-require_once(LOGIN_CHECK);
+require_once CONN;
+require_once LOGIN_CHECK;
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ require_once(LOGIN_CHECK);
     <link rel="apple-touch-icon" href="/public/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/public/site.webmanifest">
     <title><?php echo $browser_title; ?></title>
-    <?php require_once(HEADER_SRCS); ?>
+    <?php require_once HEADER_SRCS; ?>
     <?php
     //custom styles
     //HEADER_SRCS are default srcs used by all pages, if you need a page specifc src, add with the $custom_styles array
@@ -41,7 +41,7 @@ require_once(LOGIN_CHECK);
 <body>
 <div> <!-- Overall Page Container -->
 
-<?php require_once(NAVBAR); ?>
+<?php require_once NAVBAR; ?>
 
 <div id="page-content-wrapper"> <!-- Page Content Wrapper -->
 
