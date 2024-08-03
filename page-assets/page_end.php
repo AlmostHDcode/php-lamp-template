@@ -1,9 +1,9 @@
 </div> <!-- End Main Page Content -->
 </div> <!-- End Page Content Wrapper -->
-<?php require_once(FOOTER); ?>
+<?php require_once FOOTER; ?>
 </div> <!-- End Overall Page Container -->
 
-<?php require(FOOTER_SRCS); ?>
+<?php require_once FOOTER_SRCS; ?>
 
 <script>
     $(document).ready(function() {
