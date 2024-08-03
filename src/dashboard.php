@@ -4,8 +4,8 @@ $browser_title = "PHP Fullstack | Dashboard";
 $page_header = 'Dashboard';
 $custom_styles = [];
 $custom_srcs = [];
-require_once("/path/to/your/base/directory/env.php");
-require_once(PAGE_INIT);
+require_once "/path/to/your/base/directory/env.php";
+require_once PAGE_INIT;
 ?>
 
 <?php
@@ -53,7 +53,7 @@ This is some paragraph placeholder content. This is a test paragraph to show how
 </p>
 
 
-<?php require_once(PAGE_END); ?>
+<?php require_once PAGE_END; ?>
 
 <script>
     $("#alert-test-1").on('click',function(e) {
@@ -81,4 +81,4 @@ This is some paragraph placeholder content. This is a test paragraph to show how
     });
 </script>
 
-<?php require_once(HTML_END); ?>
+<?php require_once HTML_END; ?>
