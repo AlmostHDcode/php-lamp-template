@@ -4,9 +4,9 @@ $browser_title = SITE_NAME;
 $custom_srcs = [];
 $custom_styles = [];
 ob_start();
-require_once(PHP_SESSION_MANAGE);
+require_once PHP_SESSION_MANAGE;
 custom_session_start();
-require_once(CONN);
+require_once CONN;
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ require_once(CONN);
 	<link rel="icon" href="/public/android-chrome-512x512.png" type="image/png" sizes="512x512">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <title><?php echo $browser_title; ?></title>
-    <?php require_once(HEADER_SRCS); ?>
+    <?php require_once HEADER_SRCS; ?>
     <?php
     if(isset($custom_styles) && !empty($custom_styles)) {
         foreach($custom_styles as $link) {
@@ -41,7 +41,7 @@ require_once(CONN);
 <?php
 if(isset($_SESSION['login']) && $_SESSION['login'] == 'success' && isset($_GET['logout'])) {
 	$logout_status = $_GET['logout'];
-	require_once(LOGOUT);
+	require_once LOGOUT;
 } elseif(isset($_SESSION['login']) && $_SESSION['login'] == 'success') {
 	header("location: /dashboard.php");
 }
@@ -138,7 +138,7 @@ if((isset($_POST['uname']) && isset($_POST['password'])) && ($_POST['uname'] != 
 </div>
 
 
-<?php require(FOOTER_SRCS); ?>
+<?php require_once FOOTER_SRCS; ?>
 
 <script>
 $(document).ready(function() {
